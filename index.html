@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+    <title>Quiz App</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Assistant:wght@200..800&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <!--* Animate.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
+<link rel="stylesheet" href="./css/style.css">
+<link rel="icon" href="./images/quiz.png">
+<link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <header class="vh-100 d-flex align-items-center justify-content-center ">
+
+        <form class="container d-flex flex-column gap-5 animate__animated animate__backInDown">
+  <h1 class="text-white  text-center">Make your own quiz</h1>   
+<div class="inputs">
+ <div class=" input mb-3 ">
+    <select class="category form-select" id="categoryMenu" aria-label="category Select">
+              <option selected disabled class="d-none">Any Category</option>
+              <option value="27">Animals</option>
+              <option value="19">Mathematics</option>
+              <option value="18">Computers</option>
+              <option value="22">Geography</option>
+              <option value="23">History</option>
+              <option value="24">Politics</option>
+              <option value="25">Art</option>
+            </select>
+           
+         
+ </div>
+<div class="input mb-3">
+       <select class="difficulty form-select" id="difficultyOptions" aria-label=" Select">
+              <option selected disabled class="d-none">Choose diffeculty</option>
+              <option  value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+        </div>
+
+      <div class="input mb-3">
+  <input type="number" class="number form-control" id="questionsNumber"
+   placeholder="Number of Questions"/>
+ 
+</div>
+   <button type="submit" class="input btn btn-secondary">Start</button>
+
+            
+            </div>  
+
+  
+    
+
+      </form>
+
+          <div class="questions">
+      <div class="container">
+        <div class="row">
+          
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+  </body>
+</html>

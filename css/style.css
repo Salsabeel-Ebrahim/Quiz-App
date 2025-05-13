@@ -1,0 +1,95 @@
+body{
+    
+  font-family: "Roboto Slab", serif;
+  background-color: #04112d;
+}
+header{
+    background-image: url("../images/background.jpg");
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+button{
+    background-color: #8b5eb7 !important;
+    width: 50%;
+    color: white!important;
+    font-size: 19px;
+}
+
+::placeholder {
+  color: #212529  !important;
+}
+/*^Question Card */
+.question {
+  background-color: #cbbce5a6;
+  position: relative;
+}
+
+.question h2 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+
+.choices {
+  gap: 10px;
+}
+
+.choices li {
+  --main-color: #434371;
+  width: calc((100% - 10px) / 2);
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 100vh;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  padding: 5px 12px;
+  transition: background-color 350ms, color 350ms;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choices li:hover {
+  background-color: var(--main-color);
+  color: #f1f1f1;
+}
+
+.question i {
+  cursor: pointer;
+}
+
+.correct,
+.correct:hover {
+  --main-color: #7cb518 !important;
+  background-color: var(--main-color);
+  color: #fff !important;
+}
+
+.wrong,
+.wrong:hover {
+  --main-color: #bf0603 !important;
+  background-color: var(--main-color);
+  color: #fff !important;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+.again{
+  border-radius:12px;
+  -webkit-border-radius:12px;
+  -moz-border-radius:12px;
+  -ms-border-radius:12px;
+  -o-border-radius:12px;
+}
